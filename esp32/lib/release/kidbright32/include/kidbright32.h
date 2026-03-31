@@ -51,7 +51,7 @@
 // task using ESP_LOG*, should set stack size >= 2048,
 // or "CORRUPT HEAP: multi_heap.c" will occur
 #define IO_DEV_STACK_SIZE_MIN			2048
-#define I2C0_DEV_STACK_SIZE_MIN			4096
+#define I2C0_DEV_STACK_SIZE_MIN			2048
 #define I2C1_DEV_STACK_SIZE_MIN			8192
 #define SPI_DEV_STACK_SIZE_MIN			8192
 #define UART_STACK_SIZE_MIN				4096
@@ -81,7 +81,7 @@
 #define MAX_SPI_DEVICE					31
 #define IO_TASK_IDLE_MS					40
 #define I2C0_TASK_IDLE_MS				20
-#define I2C1_TASK_IDLE_MS				20
+#define I2C1_TASK_IDLE_MS				40
 #define SPI_TASK_IDLE_MS				20
 
 /*
@@ -99,7 +99,7 @@
 #define DEVICE_DATA_PREC_COEF			100
 
 #define LDR_POLLING_MS					500
-#define NTC_POLLING_MS					1000
+#define LM73_POLLING_MS					500
 #define MCP7940N_POLLING_MS				240
 #define SENSOR_HUB_POLLING_MS			240
 #define SWLED_POLLING_MS				40
@@ -109,7 +109,9 @@
 #define PCA9548_POLLING_MS				240
 
 #define HT16K33_ONBOARD_ADDR			0x70
-#define MCP7940N_ONBOARD_ADDR			0x70
+#define LM73_0_ONBOARD_ADDR				0x49
+#define LM73_1_ONBOARD_ADDR				0x4d
+#define MCP7940N_ONBOARD_ADDR			0x6f
 
 #define MCP7940N_DEFAULT_DATETIME       "18043001000000"
 
