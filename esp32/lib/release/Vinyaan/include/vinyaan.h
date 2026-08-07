@@ -1,6 +1,8 @@
 ﻿#ifndef __VINYAAN_H__
 #define __VINYAAN_H__
 
+#include "driver/gpio.h"
+
 #define BT_LED_GPIO						GPIO_NUM_17
 #define WIFI_LED_GPIO					GPIO_NUM_2
 #define NTP_LED_GPIO					GPIO_NUM_15
@@ -48,9 +50,9 @@
 // device manager
 // =============================================================================
 // xTaskCreatePinnedToCore stack size
-// task using ESP_LOG*, should set stack size >= 2048,
+// task using ESP_LOG*, should set stack size >= 4096,
 // or "CORRUPT HEAP: multi_heap.c" will occur
-#define IO_DEV_STACK_SIZE_MIN			2048
+#define IO_DEV_STACK_SIZE_MIN			4096
 #define I2C0_DEV_STACK_SIZE_MIN			4096
 #define I2C1_DEV_STACK_SIZE_MIN			8192
 #define SPI_DEV_STACK_SIZE_MIN			8192
@@ -116,5 +118,6 @@
 #define MAX_UART_SPLIT_COUNT			4
 
 void StrSplit(char *cmd, char list[][MAX_UART_LINE_CHAR_COUNT], int *cnt, int max_split_cnt);
+bool isdigit_str(char *str);
 
 #endif

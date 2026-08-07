@@ -1,13 +1,17 @@
 #ifndef __SOUND_H__
 #define __SOUND_H__
 
-#include "driver/mcpwm.h"
+#include "driver/mcpwm_prelude.h"
 #include "driver.h"
 #include "device.h"
 
 class SOUND : public Device {
 	private:
-		mcpwm_config_t pwm_config;
+		mcpwm_timer_handle_t timer;
+		mcpwm_oper_handle_t oper;
+		mcpwm_cmpr_handle_t comparator;
+		mcpwm_gen_handle_t generator;
+		bool pwm_ready;
    	 	uint32_t bpm;
 		uint32_t duty_cycle;
 		uint32_t volume;

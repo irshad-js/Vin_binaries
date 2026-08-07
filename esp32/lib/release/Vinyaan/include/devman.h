@@ -1,6 +1,7 @@
 #ifndef __DEVMAN_H__
 #define __DEVMAN_H__
 
+#include "vinyaan.h"
 #include "device.h"
 
 typedef enum {

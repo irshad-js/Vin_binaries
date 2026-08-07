@@ -33,7 +33,7 @@ class Device {
 		int address = -1;
 		bool error = false;
 		bool initialized = false;
-		uint32_t polling_ms;
+		uint32_t polling_ms = 0;
 		// method
 		virtual void init(void);
 		virtual void process(Driver *drv);
@@ -50,7 +50,7 @@ class Device {
 		uint32_t get_polling_ms(void);
 		void set_polling_ms(uint32_t ms);
 		TickType_t get_tickcnt(void);
-		bool is_tickcnt_elapsed(TickType_t tickcnt, uint32_t tickcnt_ms);
+		bool is_tickcnt_elapsed(TickType_t &tickcnt, uint32_t tickcnt_ms);
 };
 
 #endif

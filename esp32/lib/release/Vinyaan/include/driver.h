@@ -1,7 +1,9 @@
 #ifndef __DRIVER_H__
 #define __DRIVER_H__
 
-#include "esp_system.h"
+#include <stddef.h>
+#include <stdint.h>
+#include "esp_err.h"
 
 class Driver {
 	public:

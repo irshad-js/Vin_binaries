@@ -1,7 +1,10 @@
 #ifndef __SPIDEV_H__
 #define __SPIDEV_H__
 
+#include "freertos/FreeRTOS.h"
+#include "driver/gpio.h"
 #include "driver/spi_master.h"
+#include "freertos/semphr.h"
 #include "driver.h"
 
 typedef enum {
@@ -15,6 +18,9 @@ class SPIDev : public Driver {
 		int max_transfer_sz;
 		spi_device_handle_t spi, ls_spi, hs_spi;
 		sck_speed_t sck_speed;
+		bool installed;
+		SemaphoreHandle_t bus_mutex;
+		void cleanup(void);
 		esp_err_t ch_sw(int ch, bool on_off);
 
 	public:
