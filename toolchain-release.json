@@ -1,0 +1,20 @@
+{
+    "schemaVersion":  1,
+    "publishedAtUtc":  "2026-08-15T14:44:46.2126235Z",
+    "archive":  "toolchain.7z",
+    "archiveSha256":  "371094d86359363c63d94867fac6b8a9e5196ef7eff81527cad35ee23f24829a",
+    "archiveBytes":  36710432,
+    "bundleId":  "9ab3ab1bb5f468c83b221c05e03adafb28e5320f2086436cd7afd8aad2ec2cf1",
+    "uncompressedBytes":  164110248,
+    "requiredFiles":  [
+                          "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe",
+                          "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe",
+                          "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-ar.exe",
+                          "toolchain/win32/xtensa-esp-elf/libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe",
+                          "toolchain/win32/xtensa-esp-elf/libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe",
+                          "toolchain/win32/xtensa-esp-elf/xtensa-esp-elf/bin/as.exe",
+                          "toolchain/win32/xtensa-esp-elf/xtensa-esp-elf/bin/ld.exe",
+                          "toolchain/win32/esptool/esptool.exe"
+                      ],
+    "source":  "VinyaanIDE/scripts/prepare-toolchain.js allowlist"
+}
