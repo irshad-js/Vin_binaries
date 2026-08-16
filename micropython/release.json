@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "publishedAtUtc": "2026-08-16T14:47:21.1578757Z",
+  "sourceRelease": "Vinyaan-MicroPython-v1.28.0-r1",
+  "sourceCommit": "5cb1614189daa9ff1311a20f1681188b4911c3dd",
+  "sourceBuildInfoSha256": "9df7d94e8ad099fb731af2216f0d63531da66b9cff739b83700625b27ff1206e",
+  "flash": {
+    "0x1000": "bootloader.bin",
+    "0x10000": "micropython.bin",
+    "0x8000": "partition-table.bin"
+  },
+  "files": {
+    "bootloader.bin": {
+      "sha256": "341e8667bcc6ca73c91c6ba19f0fbb727704cea53f9157fc0b38e463f7f7ca0d",
+      "bytes": 22864
+    },
+    "partition-table.bin": {
+      "sha256": "520c18ca0bda73aed288d427d260ab051d71219f605707350e6c42401f4836fc",
+      "bytes": 3072
+    },
+    "micropython.bin": {
+      "sha256": "790ca69439b13c941e8c50f93a9623b949f2eb4b9138f680c10318fd5be27b39",
+      "bytes": 1713680
+    }
+  }
+}
