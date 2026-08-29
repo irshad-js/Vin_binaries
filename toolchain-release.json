@@ -1,20 +1,25 @@
 {
-    "schemaVersion":  1,
-    "publishedAtUtc":  "2026-08-15T14:44:46.2126235Z",
-    "archive":  "toolchain.7z",
-    "archiveSha256":  "371094d86359363c63d94867fac6b8a9e5196ef7eff81527cad35ee23f24829a",
-    "archiveBytes":  36710432,
-    "bundleId":  "9ab3ab1bb5f468c83b221c05e03adafb28e5320f2086436cd7afd8aad2ec2cf1",
-    "uncompressedBytes":  164110248,
-    "requiredFiles":  [
-                          "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe",
-                          "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe",
-                          "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-ar.exe",
-                          "toolchain/win32/xtensa-esp-elf/libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe",
-                          "toolchain/win32/xtensa-esp-elf/libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe",
-                          "toolchain/win32/xtensa-esp-elf/xtensa-esp-elf/bin/as.exe",
-                          "toolchain/win32/xtensa-esp-elf/xtensa-esp-elf/bin/ld.exe",
-                          "toolchain/win32/esptool/esptool.exe"
-                      ],
-    "source":  "VinyaanIDE/scripts/prepare-toolchain.js allowlist"
+  "schemaVersion": 1,
+  "publishedAtUtc": "2026-08-29T06:07:09.9127793Z",
+  "archive": "toolchain.7z",
+  "archiveSha256": "851bf126e53897d1f01a2c80da294f3fb070c301dc46206a248539d862a3938a",
+  "archiveBytes": 35512923,
+  "bundleId": "09522aa0bf960532b91edd2b219ee5abff1c293b17f348a8430fbf99d9487cdc",
+  "uncompressedBytes": 162904559,
+  "requiredFiles": [
+    "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe",
+    "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe",
+    "toolchain/win32/xtensa-esp-elf/bin/xtensa-esp32-elf-ar.exe",
+    "toolchain/win32/xtensa-esp-elf/libexec/gcc/xtensa-esp-elf/14.2.0/cc1plus.exe",
+    "toolchain/win32/xtensa-esp-elf/libexec/gcc/xtensa-esp-elf/14.2.0/cc1.exe",
+    "toolchain/win32/xtensa-esp-elf/xtensa-esp-elf/bin/as.exe",
+    "toolchain/win32/xtensa-esp-elf/xtensa-esp-elf/bin/ld.exe",
+    "toolchain/win32/esptool/esptool.exe",
+    "toolchain/win32/esptool/LICENSE-esptool",
+    "toolchain/win32/esptool/source/esptool-5.3.1.tar.gz",
+    "toolchain/win32/esptool/source/vinyaan_esptool.py",
+    "toolchain/win32/esptool/source/vinyaan_serial_proxy.py",
+    "toolchain/win32/esptool/source/build.ps1"
+  ],
+  "source": "VinyaanIDE/scripts/prepare-toolchain.js allowlist"
 }
